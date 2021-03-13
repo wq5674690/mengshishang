@@ -35,5 +35,120 @@
 5、编写相关脚本时，添加注释
 ```
 
+### 基础环境安装
+
+```shell
+# 安装hugo
+brew install hugo
+hugo new site quickstart
+cd quickstart
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo theme = \"ananke\" >> config.toml
+# 启动hugo
+hugo server -D
+# 安装fortune
+brew install fortune
+# 安装nginx
+brew install nginx
+# 安装ansible
+brew install ansible
+touch /etc/ansible/ansible.cfg
+touch /etc/ansible/hosts
+mkdir -p /etc/ansible/roles
+# 在ansbile主机列表中添加机器
+echo '[staging]' >> /etc/ansible/hosts
+echo '10.0.0.1 ansible_ssh_user=root ansible_ssh_port=22' >> /etc/ansible/hosts
+echo '[defaults]' >> /etc/ansible/ansible.cfg
+# SSH秘钥认证
+ssh-keygen -t rsa
+ssh-copy-id root@agent_host_ip
+# 解决ansible执行过程中部分报错
+echo 'interpreter_python = auto_legacy_silent' >> /etc/ansible/ansible.cfg
+# 安装git
+brew install git
+```
+
+### hugo文章更新，模拟版本迭代
+
+- 执行`sh $script_path/write_fortune.sh`
+- 脚本存放到：$hugo_home/script
+- 脚本如下：
+
+```shell
+#!/bin/bash
+# 进入脚本路径
+cd $(dirname $0);
+# 给路径变量赋值
+script_path=`pwd`;
+write_time=`date '+%Y-%m-%d_%T'`;
+echo $write_time;
+echo $script_path;
+cd ..;
+# 生成论坛文章页
+hugo new posts/$write_time.md;
+# 通过fortune生成文章内容并写入文件
+echo `fortune` >> content/posts/$write_time.md;
+```
+
+### 上传代码脚本
+
+- dev环境脚本$script_path/dev_git.sh
+- 脚本存放到：$hugo_home/script
+
+```shell
+#!/bin/bash
+# 进入脚本路径
+cd $(dirname $0);
+# 给路径变量赋值
+script_path=`pwd`;
+cd ..
+git add .
+# 每次版本号递增
+git commit -m '0.1.1'
+git push -u origin dev
+# 或者
+git tag -a V0.1.1 'release 0.1.1'
+git push origin --tags
+```
+
+- staging环境脚本$script_path/staging_git.sh
+- 脚本存放到：$hugo_home/script
+
+```python
+for i in range(0.1.0,0.2.0,0.0.1):
+    print(i)
+    
+```
+
+
+
+```shell
+#!/bin/bash
+# 进入脚本路径
+cd $(dirname $0);
+# 给路径变量赋值
+script_path=`pwd`;
+cd ..
+git add .
+# 每次版本号递增
+git commit -m '0.2.0'
+git push -u origin staging
+# 或者
+git tag -a V0.2.0 'release 0.2.0'
+git push origin --tags
+```
+
+任务计划
+
+```shell
+crontab -e
+# 设定dev环境更新时间
+10 * * * * sh $script_path/write_fortune.sh
+# 设定staging环境更新时间
+* 1 * * * sh $script_path/write_fortune.sh
+
+```
+
 
 
