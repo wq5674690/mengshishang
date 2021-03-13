@@ -150,5 +150,9 @@ crontab -e
 
 ```
 
+### ansible bookplay
 
+```
+ansibel staging -m ping
+```
 
