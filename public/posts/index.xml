@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My mss</title>
-    <link>http://example.org/posts/</link>
-    <description>Recent content in Posts on My mss</description>
+    <title>Posts on My mss pro</title>
+    <link>http://mss6.cn:8081/posts/</link>
+    <description>Recent content in Posts on My mss pro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Mar 2021 11:18:28 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 16:19:16 +0800</lastBuildDate><atom:link href="http://mss6.cn:8081/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post/</link>
-      <pubDate>Thu, 11 Mar 2021 11:18:28 +0800</pubDate>
+      <title>2021 03 15_16:19:16</title>
+      <link>http://mss6.cn:8081/posts/2021-03-15_161916/</link>
+      <pubDate>Mon, 15 Mar 2021 16:19:16 +0800</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
-      <description></description>
+      <guid>http://mss6.cn:8081/posts/2021-03-15_161916/</guid>
+      <description>Obviously, a man&amp;rsquo;s judgement cannot be better than the information on which he has based it. Give him the truth and he may still go wrong when he has the chance to be right, but give him no news or present him only with distorted and incomplete data, with ignorant, sloppy or biased reporting, with propaganda and deliberate falsehoods, and you destroy his whole reasoning processes, and make him something less than a man.</description>
+    </item>
+    
+    <item>
+      <title>2021 03 15_15:22:36</title>
+      <link>http://mss6.cn:8081/posts/2021-03-15_152236/</link>
+      <pubDate>Mon, 15 Mar 2021 15:22:36 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-15_152236/</guid>
+      <description>fortune One man&amp;rsquo;s Mede is another man&amp;rsquo;s Persian. &amp;ndash; George M. Cohan</description>
+    </item>
+    
+    <item>
+      <title>2021 03 15_15:22:34</title>
+      <link>http://mss6.cn:8081/posts/2021-03-15_152234/</link>
+      <pubDate>Mon, 15 Mar 2021 15:22:34 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-15_152234/</guid>
+      <description>fortune Ever since I was a young boy, I&amp;rsquo;ve hacked the ARPA net, From Berkeley down to Rutgers, He&amp;rsquo;s on my favorite terminal, Any access I could get, He cats C right into foo, But ain&amp;rsquo;t seen nothing like him, His disciples lead him in, On any campus yet, And he just breaks the root, That deaf, dumb, and blind kid, Always has full SYS-PRIV&amp;rsquo;s, Sure sends a mean packet. Never uses lint, That deaf, dumb, and blind kid, Sure sends a mean packet.</description>
+    </item>
+    
+    <item>
+      <title>2021 03 15_15:22:30</title>
+      <link>http://mss6.cn:8081/posts/2021-03-15_152230/</link>
+      <pubDate>Mon, 15 Mar 2021 15:22:31 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-15_152230/</guid>
+      <description>fortune There are three things I always forget. Names, faces &amp;ndash; the third I can&amp;rsquo;t remember. &amp;ndash; Italo Svevo</description>
+    </item>
+    
+    <item>
+      <title>2021 03 15_14:50:39</title>
+      <link>http://mss6.cn:8081/posts/2021-03-15_145039/</link>
+      <pubDate>Mon, 15 Mar 2021 14:50:39 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-15_145039/</guid>
+      <description>I went to the race track once and bet on a horse that was so good that it took seven others to beat him!</description>
+    </item>
+    
+    <item>
+      <title>2021 03 12_16:08:20</title>
+      <link>http://mss6.cn:8081/posts/2021-03-12_160820/</link>
+      <pubDate>Fri, 12 Mar 2021 16:08:20 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-12_160820/</guid>
+      <description>FORTRAN rots the brain. &amp;ndash; John McQuillin</description>
+    </item>
+    
+    <item>
+      <title>2021 03 12_16:08:18</title>
+      <link>http://mss6.cn:8081/posts/2021-03-12_160818/</link>
+      <pubDate>Fri, 12 Mar 2021 16:08:18 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-12_160818/</guid>
+      <description>Round Numbers are always false. &amp;ndash; Samuel Johnson</description>
+    </item>
+    
+    <item>
+      <title>2021 03 12_16:08:15</title>
+      <link>http://mss6.cn:8081/posts/2021-03-12_160815/</link>
+      <pubDate>Fri, 12 Mar 2021 16:08:15 +0800</pubDate>
+      
+      <guid>http://mss6.cn:8081/posts/2021-03-12_160815/</guid>
+      <description>Knock Knock&amp;hellip; (who&amp;rsquo;s there?) Ether! (ether who?) Ether Bunny&amp;hellip; Yea! [chorus] Yeay! Stay on the Happy side, always on the happy side, Stay on the Happy side of life! Bum bum bum bum bum bum You will feel no pain, as we drive you insane, So Stay on the Happy Side of life! Knock Knock&amp;hellip; (who&amp;rsquo;s there?) Anna! (anna who?) An another ether bunny&amp;hellip; [chorus] Knock Knock&amp;hellip; (who&amp;rsquo;s there?) Stilla! (stilla who?</description>
     </item>
     
   </channel>

@@ -16,19 +16,17 @@ srcipt_path=sys.path[0]
 hugo_path=os.getcwd()
 print(srcipt_path)
 print(hugo_path)
-# 测试
-# sh_1 = 'touch ' + srcipt_path + '/test.py'
-# os.system(sh_1)
 
 # dev环境版本每10分钟上传一次，并版本自增
-
 sh_git = "git add ./"
+# sh_push = "git push -u origin dev"
 sh_push = "git push origin --tags"
 
 for i in range(1,10):
     sh_version="v0.1." + str(i)
     fortune_time = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime())
     # 上传代码格式化"git tag -a V0.1.0 -m 'release 0.2.0'" 
+    # sh_commit = f"git commit -m 'release {sh_version.split('v')[1]}'"
     sh_commit = f"git tag -a {sh_version} -m 'release {sh_version.split('v')[1]}'"
     # print(sh_commit)
     # print(fortune_time)

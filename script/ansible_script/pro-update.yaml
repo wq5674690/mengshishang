@@ -1,0 +1,10 @@
+- hosts : test  
+  connection: local                                      
+ # remote_user : root                           #通过root用户执行
+  tasks :
+  - name : pull                            
+    shell : cd ~/mss; git clone -b master https://github.com/wq5674690/mengshishang.git
+  - name : copy hugo static staging
+    copy: 
+      src:  ~/mss/public
+      dest:  /usr/local/var/www/staging

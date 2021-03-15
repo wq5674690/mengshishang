@@ -2,17 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/my-first-post/</loc>
-    <lastmod>2021-03-11T11:18:28+08:00</lastmod>
+    <loc>http://mss6.cn:8081/posts/2021-03-15_161916/</loc>
+    <lastmod>2021-03-15T16:19:16+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2021-03-11T11:18:28+08:00</lastmod>
+    <loc>http://mss6.cn:8081/</loc>
+    <lastmod>2021-03-15T16:19:16+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2021-03-11T11:18:28+08:00</lastmod>
+    <loc>http://mss6.cn:8081/posts/</loc>
+    <lastmod>2021-03-15T16:19:16+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://mss6.cn:8081/posts/2021-03-15_152236/</loc>
+    <lastmod>2021-03-15T15:22:36+08:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://mss6.cn:8081/posts/2021-03-15_152234/</loc>
+    <lastmod>2021-03-15T15:22:34+08:00</lastmod>
+  </url><url>
+    <loc>http://mss6.cn:8081/posts/2021-03-15_152230/</loc>
+    <lastmod>2021-03-15T15:22:31+08:00</lastmod>
+  </url><url>
+    <loc>http://mss6.cn:8081/posts/2021-03-15_145039/</loc>
+    <lastmod>2021-03-15T14:50:39+08:00</lastmod>
+  </url><url>
+    <loc>http://mss6.cn:8081/posts/2021-03-12_160820/</loc>
+    <lastmod>2021-03-12T16:08:20+08:00</lastmod>
+  </url><url>
+    <loc>http://mss6.cn:8081/posts/2021-03-12_160818/</loc>
+    <lastmod>2021-03-12T16:08:18+08:00</lastmod>
+  </url><url>
+    <loc>http://mss6.cn:8081/posts/2021-03-12_160815/</loc>
+    <lastmod>2021-03-12T16:08:15+08:00</lastmod>
+  </url><url>
+    <loc>http://mss6.cn:8081/categories/</loc>
+  </url><url>
+    <loc>http://mss6.cn:8081/tags/</loc>
   </url>
 </urlset>

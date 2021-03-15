@@ -1,5 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://mss6.cn:8081/"
 languageCode = "en-us"
-title = "My mss"
-#title = "My New Hugo Site"
+title = "My mss pro"
 theme = "ananke"
