@@ -18,6 +18,8 @@
 6、nginx
 ```
 
+
+
 ### 要求
 
 ```
@@ -61,6 +63,7 @@ echo 'interpreter_python = auto_legacy_silent' >> /etc/ansible/ansible.cfg
 brew install git
 # 本地hosts
 sudo echo '127.0.0.1 mss6.cn' >> /etc/hosts
+sudo echo '127.0.0.1 dev.mss6.cn' >> /etc/hosts
 ```
 
 ### hugo文章更新，模拟版本迭代
@@ -234,11 +237,8 @@ staging环境的代码，只需修改以上脚本中，代码改为master，slee
       dest:  /usr/local/var/www/staging
 ```
 
-
-
 ### nginx配置
 
-- 本机hosts`127.0.0.1 mss6.cn`
 - 以下配置保存到`/usr/local/etc/nginx/servers/hugo.conf`中，并`nginx -s reload`
 
 ```nginx
@@ -283,6 +283,3 @@ server {
     }
 }
 ```
-
-
-
