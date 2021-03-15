@@ -95,8 +95,8 @@ hugo -D
 
 ### 手动上传代码脚本
 
-- dev环境脚本$script_path/dev_git.sh
-- 脚本存放到：$hugo_home/script
+- dev环境脚本`$script_path/dev_git.sh`
+- 脚本存放到：`$hugo_home/script`
 
 ```shell
 #!/bin/bash
@@ -114,8 +114,8 @@ git tag -a V0.1.1 'release 0.1.1'；
 git push origin --tags；
 ```
 
-- staging环境脚本$script_path/staging_git.sh
-- 脚本存放到：$hugo_home/script
+- staging环境脚本`$script_path/staging_git.sh`
+- 脚本存放到：`$hugo_home/script`
 
 ```shell
 #!/bin/bash
@@ -135,7 +135,7 @@ git push origin --tags；
 
 ### git版本自动上传
 
-- 更新的文件有：config.toml、public
+- 更新的文件为：public
 - 注意生成dev环境的页面时，修改config.toml，域名指向：`baseURL = "http://dev.mss6.cn:8082/"`,生成staging环境页面时，域名指向：`baseURL = "http://mss6.cn:8081/"`
 - 生成静态文件`hugo -D`
 
