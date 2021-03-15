@@ -2,7 +2,7 @@
 
 ```
 1、通过雨果静态文件生成器，进行生成静态文件；
-2、通过git上传代码到github上，并创建二个分支，dev和master分支；分支版本要求，0.1.0开始，0.2.0结束；dev分支，每10分钟进行上传更新一次；master每1小时更新一次；
+2、通过git上传代码到github上，并创建二个分支，dev和master分支；分支版本要求，0.1.0开始，0.2.0结束；dev分支，每10分钟进行上传更新一次；main每1小时更新一次；
 3、通过nginx进行分发，设置staging环境和dev环境；
 4、通过ansible进行代码编译；
 ```
@@ -22,9 +22,9 @@
 
 ```
 1、通过ansible playbook来配置服务器的基础环境
-2、通过nginx设置二个环境，dev和staging（pro）
-3、dev环境，代码通过git每10分钟更新一次
-4、staging环境，代码通过git每小时更新一次
+2、通过nginx设置二个环境，dev和staging
+3、dev环境，代码通过git每10分钟更新一次，git分支为dev
+4、staging环境，代码通过git每小时更新一次,git分支为main
 5、编写相关脚本时，添加注释
 ```
 
@@ -124,7 +124,7 @@ cd ..
 git add .
 # 每次版本号递增
 git commit -m '0.2.0'；
-git push -u origin staging；
+git push -u origin main；
 # 或者
 git tag -a V0.2.0 'release 0.2.0'；
 git push origin --tags；
@@ -138,9 +138,9 @@ git push origin --tags；
 
 ```shell
 # 更新环境代码前，请确认是哪个环境的配置
-# dev
-sed -i 's/example.org/mss6.cn:8081/g' ~/mss/config.toml
 # staging
+sed -i 's/example.org/mss6.cn:8081/g' ~/mss/config.toml
+# dev
 sed -i 's/example.org/dev.mss6.cn:8082/g' ~/mss/config.toml
 ```
 
@@ -227,7 +227,7 @@ staging环境的代码，只需修改以上脚本中，代码改为master，slee
  # remote_user : root                           #通过root用户执行
   tasks :
   - name : pull                            
-    shell : cd ~/mss; git clone -b master https://github.com/wq5674690/mengshishang.git
+    shell : cd ~/mss; git clone -b main https://github.com/wq5674690/mengshishang.git
   - name : copy hugo static staging
     copy: 
       src:  ~/mss/public
